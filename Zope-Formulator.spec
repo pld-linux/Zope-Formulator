@@ -9,6 +9,7 @@ Release:	1
 License:	BSD-like
 Group:		Development/Languages/Python
 Source0:	http://www.zope.org/Members/faassen/%{prod_name}/%{prod_name}-%{version}.tgz
+# Source0-md5:	ee9d0f3b000f14f66962440fc2e638ae
 URL:		http://www.zope.org/Members/faassen/%{prod_name}
 Requires:	Zope
 BuildRequires:	python >= 2.1
