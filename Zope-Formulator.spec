@@ -13,6 +13,7 @@ Group(de):	Entwicklung/Sprachen/Python
 Group(pl):	Programowanie/Jêzyki/Python
 Requires:	Zope
 BuildRequires:	python >= 2.1
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define python_compile_opt python -O -c "import compileall; compileall.compile_dir('.')"
