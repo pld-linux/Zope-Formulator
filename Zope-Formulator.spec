@@ -1,12 +1,10 @@
 %include        /usr/lib/rpm/macros.python
-
 %define 	zope_subname	Formulator
-
 Summary:	Zope framework that eases the creation and validation of web forms
 Summary(pl):	Dodatek do Zope u³atwiaj±cy tworzenie i sprawdzanie poprawno¶ci formularzy WWW
 Name:		Zope-%{zope_subname}
 Version:	1.5.0
-Release:	2
+Release:	3
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://www.zope.org/Members/infrae/Formulator/Formulator-%{version}/%{zope_subname}-%{version}.tgz
@@ -14,6 +12,7 @@ Source0:	http://www.zope.org/Members/infrae/Formulator/Formulator-%{version}/%{z
 URL:		http://www.zope.org/Members/infrae/Formulator/
 %pyrequires_eq  python-modules
 Requires:	Zope
+Requires(post,postun):  /usr/sbin/installzopeproduct
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
