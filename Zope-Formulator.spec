@@ -38,7 +38,6 @@ w Zope, w specjalnym folderze Form.
 %{python_compile_opt}
 
 find . -name \*.py | xargs -r rm -f
-gzip -9nf *.txt
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -52,5 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz 
+%doc *.txt
 %{zope_productsdir}/%{prod_name}
