@@ -17,8 +17,6 @@ Requires:	Zope
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         product_dir     /usr/lib/zope/Products
-
 %description
 %{zope_subname} is a tool to help with the creation and validation of web
 forms. Form fields are stored as objects in Zope, in a special Form folder.
