@@ -8,8 +8,6 @@ Version:	1.0.1
 Release:	1
 License:	BSD-style
 Group:		Development/Languages/Python
-Group(de):	Entwicklung/Sprachen/Python
-Group(pl):	Programowanie/Jêzyki/Python
 Source0:	http://www.zope.org/Members/faassen/%{prod_name}/%{prod_name}-%{version}.tgz
 URL:		http://www.zope.org/Members/faassen/%{prod_name}
 Requires:	Zope
