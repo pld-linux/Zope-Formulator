@@ -1,6 +1,4 @@
-
 %define prod_name Formulator
-
 Summary:	Zope framework that eases the creation and validation of web forms
 Summary(pl):	Dodatek do Zope u³atwiaj±cy tworzenie i sprawdzanie poprawno¶ci formularzy WWW
 Name:		Zope-%{prod_name}
@@ -11,8 +9,8 @@ Group:		Development/Languages/Python
 Source0:	http://www.zope.org/Members/faassen/Formulator/%{prod_name}-%{version}.tgz
 # Source0-md5:	ee9d0f3b000f14f66962440fc2e638ae
 URL:		http://www.zope.org/Members/faassen/Formulator/
-Requires:	Zope
 BuildRequires:	python >= 2.1
+Requires:	Zope
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
