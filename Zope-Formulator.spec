@@ -1,16 +1,17 @@
 
 %define prod_name Formulator
 
-Summary:	Zope framework that eases the creation and validation of web forms. 
+Summary:	Zope framework that eases the creation and validation of web forms
+Summary(pl):	Dodatek do Zope u³atwiaj±cy tworzenie i sprawdzanie poprawno¶ci formularzy WWW
 Name:		Zope-%{prod_name}
 Version:	1.0.1
 Release:	1
 License:	BSD-style
-Source0:	http://www.zope.org/Members/faassen/%{prod_name}/%{prod_name}-%{version}.tgz
-URL:		http://www.zope.org/Members/faassen/%{prod_name}
 Group:		Development/Languages/Python
 Group(de):	Entwicklung/Sprachen/Python
 Group(pl):	Programowanie/Jêzyki/Python
+Source0:	http://www.zope.org/Members/faassen/%{prod_name}/%{prod_name}-%{version}.tgz
+URL:		http://www.zope.org/Members/faassen/%{prod_name}
 Requires:	Zope
 BuildRequires:	python >= 2.1
 BuildArch:	noarch
@@ -25,6 +26,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 %{prod_name} is a tool to help with the creation and validation of web                            
 forms. Form fields are stored as objects in Zope, in a special Form folder.
+
+%description -l pl
+%{prod_name} jest narzêdziem pomagaj±cym przy tworzeniu i sprawdzaniu
+poprawno¶ci formularzy WW. Pola formularza s± zapisywane jako obiekty
+w Zope, w specjalnym folderze Form.
 
 %prep
 %setup -q -n %{prod_name}
