@@ -1,7 +1,7 @@
 
 %define prod_name Formulator
 
-Summary:	Python interface to OpenSSL
+Summary:	Zope framework that eases the creation and validation of web forms. 
 Name:		Zope-%{prod_name}
 Version:	1.0.1
 Release:	1
@@ -12,7 +12,7 @@ Group:		Development/Languages/Python
 Group(de):	Entwicklung/Sprachen/Python
 Group(pl):	Programowanie/Jêzyki/Python
 Requires:	Zope
-BuildRequires:	python >= 1.5.2
+BuildRequires:	python >= 2.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define python_compile_opt python -O -c "import compileall; compileall.compile_dir('.')"
