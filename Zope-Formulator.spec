@@ -10,10 +10,10 @@ Group:		Development/Tools
 Source0:	http://www.zope.org/Members/infrae/Formulator/Formulator-%{version}/%{zope_subname}-%{version}.tgz
 # Source0-md5:	c5eb395918349036c7ac400dbbff98e9
 URL:		http://www.zope.org/Members/infrae/Formulator/
-BuildRequires:  python
-%pyrequires_eq  python-modules
+BuildRequires:	python
+%pyrequires_eq	python-modules
 Requires:	Zope
-Requires(post,postun):  /usr/sbin/installzopeproduct
+Requires(post,postun):	/usr/sbin/installzopeproduct
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
