@@ -1,14 +1,18 @@
+#
+# Warning: product is req. by Plone but make error when create form on Zope 2.7b4 and python 2.3.3
+#
+
 %include        /usr/lib/rpm/macros.python
 %define 	zope_subname	Formulator
 Summary:	Zope framework that eases the creation and validation of web forms
 Summary(pl):	Dodatek do Zope u³atwiaj±cy tworzenie i sprawdzanie poprawno¶ci formularzy WWW
 Name:		Zope-%{zope_subname}
-Version:	1.6.0
+Version:	1.6.1
 Release:	1
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://www.zope.org/Members/infrae/Formulator/Formulator-%{version}/%{zope_subname}-%{version}.tgz
-# Source0-md5:	6938676c62df184a6770bae90be25ce5
+# Source0-md5:	3753d468f24ea36e8ca61a13096c7095
 URL:		http://www.zope.org/Members/infrae/Formulator/
 %pyrequires_eq  python-modules
 Requires:	Zope
@@ -35,7 +39,7 @@ mv -f {CREDITS.txt,HISTORY.txt,INSTALL.txt,README.txt,TODO.txt} docs
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
-cp -af * $RPM_BUILD_ROOT%{_datadir}/%{name}
+cp -af {dtml,help,tests,www,*.py,*.html,version.txt} $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %py_comp $RPM_BUILD_ROOT%{_datadir}/%{name}
 %py_ocomp $RPM_BUILD_ROOT%{_datadir}/%{name}
