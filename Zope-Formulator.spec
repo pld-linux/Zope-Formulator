@@ -1,5 +1,4 @@
 
-%include        /usr/lib/rpm/macros.python
 %define 	zope_subname	Formulator
 Summary:	Zope framework that eases the creation and validation of web forms
 Summary(pl):	Dodatek do Zope u³atwiaj±cy tworzenie i sprawdzanie poprawno¶ci formularzy WWW
