@@ -6,7 +6,7 @@ Summary(pl):	Dodatek do Zope u³atwiaj±cy tworzenie i sprawdzanie poprawno¶ci for
 Name:		Zope-%{prod_name}
 Version:	1.0.1
 Release:	1
-License:	BSD-style
+License:	BSD-like
 Group:		Development/Languages/Python
 Source0:	http://www.zope.org/Members/faassen/%{prod_name}/%{prod_name}-%{version}.tgz
 URL:		http://www.zope.org/Members/faassen/%{prod_name}
