@@ -20,10 +20,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define python_compile     python -c "import compileall; compileall.compile_dir('.')"
 
 %define zope_dir	   %{_libdir}/zope
-%define zope_productsdir   %{zope_dir}/Products 	
+%define zope_productsdir   %{zope_dir}/Products
 
 %description
-%{prod_name} is a tool to help with the creation and validation of web                            
+%{prod_name} is a tool to help with the creation and validation of web
 forms. Form fields are stored as objects in Zope, in a special Form folder.
 
 %description -l pl
