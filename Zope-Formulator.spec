@@ -3,13 +3,13 @@
 Summary:	Zope framework that eases the creation and validation of web forms
 Summary(pl):	Dodatek do Zope u³atwiaj±cy tworzenie i sprawdzanie poprawno¶ci formularzy WWW
 Name:		Zope-%{zope_subname}
-Version:	1.6.2
-Release:	2
+Version:	1.8.0
+Release:	1
 License:	BSD-like
 Group:		Development/Tools
-Source0:	http://www.zope.org/Members/infrae/Formulator/Formulator-%{version}/%{zope_subname}-%{version}.tgz
-# Source0-md5:	c5eb395918349036c7ac400dbbff98e9
-URL:		http://www.zope.org/Members/infrae/Formulator/
+Source0:	http://www.infrae.com/download/%{zope_subname}/%{version}/%{zope_subname}-%{version}.tgz
+# Source0-md5:	824daf4d119be572276a7e157f72d311
+URL:		http://www.infrae.com/products/formulator/
 BuildRequires:	python
 %pyrequires_eq	python-modules
 Requires:	Zope
