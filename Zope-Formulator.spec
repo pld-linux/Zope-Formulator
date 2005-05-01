@@ -36,7 +36,7 @@ mv -f {CREDITS.txt,HISTORY.txt,INSTALL.txt,README.txt,TODO.txt} docs
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
-cp -af {dtml,help,tests,www,*.py,*.html,refresh.txt,version.txt} $RPM_BUILD_ROOT%{_datadir}/%{name}
+cp -af {dtml,help,i18n,tests,www,*.py,*.html,refresh.txt,version.txt} $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %py_comp $RPM_BUILD_ROOT%{_datadir}/%{name}
 %py_ocomp $RPM_BUILD_ROOT%{_datadir}/%{name}
