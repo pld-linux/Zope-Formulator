@@ -11,25 +11,25 @@ Source0:	http://www.infrae.com/download/%{zope_subname}/%{version}/%{zope_subnam
 # Source0-md5:	c50bc1997ed8a4509ffcf75b7d1a495e
 URL:		http://www.infrae.com/products/formulator/
 BuildRequires:	python
+BuildRequires:	rpmbuild(macros) >= 1.268
 %pyrequires_eq	python-modules
-Requires:	Zope
 Requires(post,postun):	/usr/sbin/installzopeproduct
+Requires:	Zope
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-%{zope_subname} is a tool to help with the creation and validation of web
-forms. Form fields are stored as objects in Zope, in a special Form folder.
+%{zope_subname} is a tool to help with the creation and validation of
+web forms. Form fields are stored as objects in Zope, in a special
+Form folder.
 
 %description -l pl
-%{zope_subname} jest narzêdziem pomagaj±cym przy tworzeniu i sprawdzaniu
-poprawno¶ci formularzy WWW. Pola formularza s± zapisywane jako obiekty
-w Zope, w specjalnym folderze Form.
+%{zope_subname} jest narzêdziem pomagaj±cym przy tworzeniu i
+sprawdzaniu poprawno¶ci formularzy WWW. Pola formularza s± zapisywane
+jako obiekty w Zope, w specjalnym folderze Form.
 
 %prep
 %setup -q -n %{zope_subname}
-
-%build
 mkdir docs
 mv -f {CREDITS.txt,HISTORY.txt,INSTALL.txt,README.txt,TODO.txt} docs
 
@@ -49,16 +49,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 /usr/sbin/installzopeproduct %{_datadir}/%{name} %{zope_subname}
-if [ -f /var/lock/subsys/zope ]; then
-	/etc/rc.d/init.d/zope restart >&2
-fi
+%service -q zope restart
 
 %postun
 if [ "$1" = "0" ]; then
-	/usr/sbin/installzopeproduct -d %{zope_subname} 
-	if [ -f /var/lock/subsys/zope ]; then
-		/etc/rc.d/init.d/zope restart >&2
-	fi
+	/usr/sbin/installzopeproduct -d %{zope_subname}
+	%service -q zope restart
 fi
 
 %files
