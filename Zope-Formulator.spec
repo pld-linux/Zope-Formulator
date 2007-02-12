@@ -1,7 +1,7 @@
 
 %define 	zope_subname	Formulator
 Summary:	Zope framework that eases the creation and validation of web forms
-Summary(pl):	Dodatek do Zope u³atwiaj±cy tworzenie i sprawdzanie poprawno¶ci formularzy WWW
+Summary(pl.UTF-8):   Dodatek do Zope uÅ‚atwiajÄ…cy tworzenie i sprawdzanie poprawnoÅ›ci formularzy WWW
 Name:		Zope-%{zope_subname}
 Version:	1.11.1
 Release:	1
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 web forms. Form fields are stored as objects in Zope, in a special
 Form folder.
 
-%description -l pl
-%{zope_subname} jest narzêdziem pomagaj±cym przy tworzeniu i
-sprawdzaniu poprawno¶ci formularzy WWW. Pola formularza s± zapisywane
+%description -l pl.UTF-8
+%{zope_subname} jest narzÄ™dziem pomagajÄ…cym przy tworzeniu i
+sprawdzaniu poprawnoÅ›ci formularzy WWW. Pola formularza sÄ… zapisywane
 jako obiekty w Zope, w specjalnym folderze Form.
 
 %prep
