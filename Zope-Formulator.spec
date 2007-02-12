@@ -1,7 +1,7 @@
 
 %define 	zope_subname	Formulator
 Summary:	Zope framework that eases the creation and validation of web forms
-Summary(pl.UTF-8):   Dodatek do Zope ułatwiający tworzenie i sprawdzanie poprawności formularzy WWW
+Summary(pl.UTF-8):	Dodatek do Zope ułatwiający tworzenie i sprawdzanie poprawności formularzy WWW
 Name:		Zope-%{zope_subname}
 Version:	1.11.1
 Release:	1
